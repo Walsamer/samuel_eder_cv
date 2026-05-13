@@ -388,6 +388,33 @@
       height: 26px;
     }
 
+    /* Video row */
+    .insame-videos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid #e8e8e8;
+    }
+
+    .insame-videos .video-wrap {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      background: var(--black);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    .insame-videos .video-wrap iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
     /* Footer */
     footer {
       background: var(--black);
@@ -726,7 +753,7 @@
 
           <div class="audio-item">
             <div class="track-name">Der coole Fuchs</div>
-            <div class="track-instr">Saxophone</div>
+            <div class="track-instr">Saxophon Vol. 1, Chapter 1</div>
             <audio controls preload="none">
               <source src="insame_files/songs/der_coole_fuchs_+1_saxes.m4a" type="audio/mp4" />
             </audio>
@@ -734,7 +761,7 @@
 
           <div class="audio-item">
             <div class="track-name">Die alte Pyramide</div>
-            <div class="track-instr">Saxophone</div>
+            <div class="track-instr">Saxophon Vol. 1, Chapter 1</div>
             <audio controls preload="none">
               <source src="insame_files/songs/die_alte_pyramide_saxes.m4a" type="audio/mp4" />
             </audio>
@@ -749,24 +776,8 @@
           </div>
 
           <div class="audio-item">
-            <div class="track-name">Die schnelle Maus</div>
-            <div class="track-instr">Saxophone</div>
-            <audio controls preload="none">
-              <source src="insame_files/songs/die_schnelle_maus_saxes.m4a" type="audio/mp4" />
-            </audio>
-          </div>
-
-          <div class="audio-item">
-            <div class="track-name">Holzfäller Rock</div>
-            <div class="track-instr">Saxophone</div>
-            <audio controls preload="none">
-              <source src="insame_files/songs/holzfaeller_rock_saxes.m4a" type="audio/mp4" />
-            </audio>
-          </div>
-
-          <div class="audio-item">
             <div class="track-name">Kleines Hänschen</div>
-            <div class="track-instr">Saxophone</div>
+            <div class="track-instr">Saxophon Vol. 1, Chapter 1</div>
             <audio controls preload="none">
               <source src="insame_files/songs/kleines_haenschen_+1_saxes.m4a" type="audio/mp4" />
             </audio>
@@ -774,15 +785,23 @@
 
           <div class="audio-item">
             <div class="track-name">Konsonanz / Dissonanz</div>
-            <div class="track-instr">Saxophone</div>
+            <div class="track-instr">Saxophon Vol. 1, Chapter 2</div>
             <audio controls preload="none">
               <source src="insame_files/songs/konsonanz_dissonanz_2_+1_saxes.m4a" type="audio/mp4" />
             </audio>
           </div>
 
           <div class="audio-item">
+            <div class="track-name">Eagle Funk</div>
+            <div class="track-instr">Image Song - additional material. Recording by Fabio Devigili</div>
+            <audio controls preload="none">
+              <source src="insame_files/Eagle Funk - Sax + Playalong - V1.0.m4a" type="audio/mp4" />
+            </audio>
+          </div>
+
+          <div class="audio-item">
             <div class="track-name">Old but Gold</div>
-            <div class="track-instr">Clarinet</div>
+            <div class="track-instr">Clarinet Vol. 1 Chapter 7</div>
             <audio controls preload="none">
               <source src="insame_files/songs/old_but_gold_kl.m4a" type="audio/mp4" />
             </audio>
@@ -790,7 +809,7 @@
 
           <div class="audio-item">
             <div class="track-name">Rhythmus 5</div>
-            <div class="track-instr">Clarinet / Saxophone</div>
+            <div class="track-instr">Rhythmus exercise</div>
             <audio controls preload="none">
               <source src="insame_files/songs/rhythmus_5.m4a" type="audio/mp4" />
             </audio>
@@ -800,6 +819,16 @@
       </div>
 
     </div>
+
+    <div class="insame-videos">
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/wUF-tRemu0k" allowfullscreen loading="lazy" title="INSAME video 1"></iframe>
+      </div>
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/JTiE7HaEChE" allowfullscreen loading="lazy" title="INSAME video 2"></iframe>
+      </div>
+    </div>
+
   </div>
 
   <footer>
