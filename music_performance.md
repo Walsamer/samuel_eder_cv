@@ -14,6 +14,7 @@
 
 ## Chamber Music
 
+- **Chroma Quintet** — World premiere of *Inferno* by Pierre Thilloy, a work dedicated to the ensemble; Jastrzębie-Zdrój (2025), Lublin (2024), Caylus Festival, France (2026) — https://youtu.be/bb964r8xj1E
 - Ensemble+ «ensemble for contemporary music» at Festival Texte und Töne (2021)
 - Member, Ensemble Wechselspiel (2021)
 - Ensemble Ars Braemia (contemporary music), Zurich – Clarinet / E-flat Clarinet (2019)

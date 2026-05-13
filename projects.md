@@ -30,7 +30,8 @@
 ## ZahnML
 
 - Built a dental data workflow for transcription, classification, and structured extraction of relevant information
-- Designed the pipeline to transform dental inputs into structured outputs suitable for creating Heil- und Kostenpläne
+- Automated generation of Heil- und Kostenpläne and Materialabrechnungen directly from transcription output
+- Designed the pipeline to transform dental inputs into structured outputs suitable for billing and treatment documentation
 - Supported use cases for dentists in Schleswig-Holstein
 
 ## LLM as a Judge — Research Paper

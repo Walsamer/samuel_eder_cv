@@ -21,6 +21,7 @@
 - Institutions: Musikschule Gänserndorf (AT), Musikschule Walgau (AT), Hiltensweiler (DE), Weißensberg (DE)
 - Period: 2017 – 2025
 - Over 8 years of individual and group instruction across Austria and Germany
-- Developed tailored lesson plans to support technique, musicality, and performance confidence
+- Developed tailored lesson plans for all skill levels and ages to support technique, musicality, and performance confidence
+- Deep practical understanding of musical technique, methodical teaching and learning of wind instruments, notation, composition, music theory and performance feedback
 - Prepared students for recitals, examinations, and ensemble participation
 
