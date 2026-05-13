@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INSAME – Project Materials</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --red:   #e8001d;
+      --black: #0d0d0d;
+      --dark:  #1a1a1a;
+      --mid:   #2e2e2e;
+      --muted: #6b6b6b;
+      --light: #f4f4f4;
+      --white: #ffffff;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background: var(--light);
+      color: var(--black);
+      font-size: 13.5px;
+      line-height: 1.55;
+    }
+
+    .page {
+      max-width: 960px;
+      margin: 32px auto;
+      background: var(--white);
+      box-shadow: 0 4px 32px rgba(0,0,0,.12);
+      padding-bottom: 48px;
+    }
+
+    /* Header */
+    header {
+      background: var(--black);
+      color: var(--white);
+      padding: 36px 48px 28px;
+    }
+
+    header .back {
+      font-size: 11px;
+      color: var(--muted);
+      text-decoration: none;
+      letter-spacing: .5px;
+    }
+    header .back:hover { color: var(--red); }
+
+    header h1 {
+      font-size: 26px;
+      font-weight: 800;
+      margin-top: 10px;
+      letter-spacing: -.5px;
+    }
+
+    header p {
+      font-size: 12.5px;
+      color: #aaa;
+      margin-top: 6px;
+    }
+
+    .red-bar { height: 5px; background: var(--red); }
+
+    /* Sections */
+    .section {
+      padding: 32px 48px 0;
+    }
+
+    h2.section-title {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--red);
+      margin-bottom: 16px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid var(--light);
+    }
+
+    /* Screenshot grid */
+    .img-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+
+    .img-grid a {
+      display: block;
+      overflow: hidden;
+      border-radius: 3px;
+      border: 1px solid #e0e0e0;
+      background: #f0f0f0;
+    }
+
+    .img-grid a.wide { grid-column: span 2; }
+
+    .img-grid img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      display: block;
+      transition: opacity .15s;
+    }
+
+    .img-grid a.wide img { height: 180px; }
+    .img-grid a:hover img { opacity: .85; }
+
+    /* Character grid */
+    .char-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 8px;
+    }
+
+    .char-grid a {
+      display: block;
+      overflow: hidden;
+      border-radius: 3px;
+      border: 1px solid #e0e0e0;
+      background: #f8f8f8;
+    }
+
+    .char-grid img {
+      width: 100%;
+      height: 120px;
+      object-fit: contain;
+      padding: 8px;
+      display: block;
+      transition: opacity .15s;
+    }
+
+    .char-grid a:hover img { opacity: .85; }
+
+    /* Press */
+    .press-wrap {
+      display: flex;
+      gap: 16px;
+    }
+
+    .press-wrap a {
+      display: block;
+      overflow: hidden;
+      border-radius: 3px;
+      border: 1px solid #e0e0e0;
+      width: 220px;
+      flex-shrink: 0;
+    }
+
+    .press-wrap img {
+      width: 100%;
+      object-fit: cover;
+      display: block;
+      transition: opacity .15s;
+    }
+
+    .press-wrap a:hover img { opacity: .85; }
+
+    /* Audio */
+    .audio-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 12px 20px;
+    }
+
+    .audio-item .track-name {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--black);
+      margin-bottom: 2px;
+    }
+
+    .audio-item .track-instr {
+      font-size: 10px;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    .audio-item audio {
+      width: 100%;
+      height: 28px;
+    }
+
+    .audio-featured {
+      margin-bottom: 20px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #ebebeb;
+    }
+
+    .audio-featured .track-name { font-size: 13px; }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <a class="back" href="../index.html">← Back to CV</a>
+    <h1>INSAME – Project Materials</h1>
+    <p>Instrumental Game — mobile app for learning wind instruments with real-time pitch recognition</p>
+  </header>
+  <div class="red-bar"></div>
+
+  <!-- Screenshots -->
+  <div class="section" style="margin-top:32px;">
+    <h2 class="section-title">App Screenshots</h2>
+    <div class="img-grid">
+      <a href="insame_mobilegame_blasinstrumente_banner.png" target="_blank" class="wide">
+        <img src="insame_mobilegame_blasinstrumente_banner.png" alt="INSAME banner" style="object-position:center top;" />
+      </a>
+      <a href="Insame_mobilegame_musik_blasinstrument.png" target="_blank">
+        <img src="Insame_mobilegame_musik_blasinstrument.png" alt="Mobile game music" />
+      </a>
+      <a href="holding_the_note_screen.png" target="_blank">
+        <img src="holding_the_note_screen.png" alt="Pitch detection – hold the note" />
+      </a>
+      <a href="songmode_game.jpg" target="_blank">
+        <img src="songmode_game.jpg" alt="Song mode with real-time feedback" />
+      </a>
+      <a href="ipad-4.png" target="_blank">
+        <img src="ipad-4.png" alt="Sheet music view" />
+      </a>
+      <a href="Start_screen.png" target="_blank">
+        <img src="Start_screen.png" alt="Start screen" />
+      </a>
+      <a href="Theory_explanation_screen.png" target="_blank">
+        <img src="Theory_explanation_screen.png" alt="Theory explanation screen" />
+      </a>
+      <a href="Instrumentalschule_mit_mobilegame_1zu1.png" target="_blank">
+        <img src="Instrumentalschule_mit_mobilegame_1zu1.png" alt="Instrumental school 1:1 with mobile game" style="object-fit:contain;padding:8px;background:#f4f4f4;" />
+      </a>
+    </div>
+  </div>
+
+  <!-- Characters -->
+  <div class="section" style="margin-top:28px;">
+    <h2 class="section-title">Game Characters</h2>
+    <div class="char-grid">
+      <a href="charackters/1-aquila.png" target="_blank">
+        <img src="charackters/1-aquila.png" alt="Aquila" />
+      </a>
+      <a href="charackters/2-antlia.png" target="_blank">
+        <img src="charackters/2-antlia.png" alt="Antlia" />
+      </a>
+      <a href="charackters/3-konnakolo.png" target="_blank">
+        <img src="charackters/3-konnakolo.png" alt="Konnakolo" />
+      </a>
+      <a href="charackters/4-racco.png" target="_blank">
+        <img src="charackters/4-racco.png" alt="Racco" />
+      </a>
+      <a href="charackters/img_20210818_155836.jpg" target="_blank">
+        <img src="charackters/img_20210818_155836.jpg" alt="Character concept" style="object-fit:cover;" />
+      </a>
+    </div>
+  </div>
+
+  <!-- Press -->
+  <div class="section" style="margin-top:28px;">
+    <h2 class="section-title">Press</h2>
+    <div class="press-wrap">
+      <a href="VN_10-23.jpeg" target="_blank">
+        <img src="VN_10-23.jpeg" alt="Vorarlberg Nachrichten – October 2023" />
+      </a>
+    </div>
+  </div>
+
+  <!-- Audio recordings -->
+  <div class="section" style="margin-top:28px;">
+    <h2 class="section-title">Audio Recordings &amp; Play-alongs</h2>
+
+    <div class="audio-featured">
+      <div class="audio-item">
+        <div class="track-name">Eagle Funk</div>
+        <div class="track-instr">Saxophone + Play-along</div>
+        <audio controls preload="none">
+          <source src="Eagle Funk - Sax + Playalong - V1.0.m4a" type="audio/mp4" />
+        </audio>
+      </div>
+    </div>
+
+    <div class="audio-grid">
+      <div class="audio-item">
+        <div class="track-name">Der coole Fuchs</div>
+        <div class="track-instr">Saxophone</div>
+        <audio controls preload="none">
+          <source src="songs/der_coole_fuchs_+1_saxes.m4a" type="audio/mp4" />
+        </audio>
+      </div>
+      <div class="audio-item">
+        <div class="track-name">Die alte Pyramide</div>
+        <div class="track-instr">Saxophone</div>
+        <audio controls preload="none">
+          <source src="songs/die_alte_pyramide_saxes.m4a" type="audio/mp4" />
+        </audio>
+      </div>
+      <div class="audio-item">
+        <div class="track-name">Die schlafende Mumie</div>
+        <div class="track-instr">Clarinet</div>
+        <audio controls preload="none">
+          <source src="songs/die_schlafende_mumie_kl.m4a" type="audio/mp4" />
+        </audio>
+      </div>
+      <div class="audio-item">
+        <div class="track-name">Die schnelle Maus</div>
+        <div class="track-instr">Saxophone</div>
+        <audio controls preload="none">
+          <source src="songs/die_schnelle_maus_saxes.m4a" type="audio/mp4" />
+        </audio>
+      </div>
+      <div class="audio-item">
+        <div class="track-name">Holzfäller Rock</div>
+        <div class="track-instr">Saxophone</div>
+        <audio controls preload="none">
+          <source src="songs/holzfaeller_rock_saxes.m4a" type="audio/mp4" />
+        </audio>
+      </div>
+      <div class="audio-item">
+        <div class="track-name">Kleines Hänschen</div>
+        <div class="track-instr">Saxophone</div>
+        <audio controls preload="none">
+          <source src="songs/kleines_haenschen_+1_saxes.m4a" type="audio/mp4" />
+        </audio>
+      </div>
+      <div class="audio-item">
+        <div class="track-name">Konsonanz / Dissonanz</div>
+        <div class="track-instr">Saxophone</div>
+        <audio controls preload="none">
+          <source src="songs/konsonanz_dissonanz_2_+1_saxes.m4a" type="audio/mp4" />
+        </audio>
+      </div>
+      <div class="audio-item">
+        <div class="track-name">Old but Gold</div>
+        <div class="track-instr">Clarinet</div>
+        <audio controls preload="none">
+          <source src="songs/old_but_gold_kl.m4a" type="audio/mp4" />
+        </audio>
+      </div>
+      <div class="audio-item">
+        <div class="track-name">Rhythmus 5</div>
+        <div class="track-instr">Clarinet / Saxophone</div>
+        <audio controls preload="none">
+          <source src="songs/rhythmus_5.m4a" type="audio/mp4" />
+        </audio>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
