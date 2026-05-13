@@ -3,77 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Samuel Eder – AI & Music Pattern Recognition Specialist</title>
+  <title>Samuel Eder – CV (Print)</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --red:    #d30037;
-      --black:  #00171b;
-      --dark:   #00171b;
-      --mid:    #2e2e2e;
-      --muted:  #6b6b6b;
-      --light:  #f4f4f4;
-      --white:  #ffffff;
-      --accent: #d30037;
+      --red:   #d30037;
+      --black: #00171b;
+      --dark:  #00171b;
+      --mid:   #2e2e2e;
+      --muted: #6b6b6b;
+      --light: #f4f4f4;
+      --white: #ffffff;
     }
 
     body {
       font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      background: var(--light);
+      background: white;
       color: var(--black);
-      font-size: 13.5px;
-      line-height: 1.55;
+      font-size: 12px;
+      line-height: 1.5;
     }
 
-    /* ── Page wrapper ── */
     .page {
       max-width: 900px;
-      margin: 32px auto;
-      background: var(--white);
-      box-shadow: 0 4px 32px rgba(0,0,0,.12);
+      margin: 0 auto;
+      background: white;
     }
 
-    /* ── Header ── */
+    /* Header */
     header {
       display: grid;
       grid-template-columns: 1fr auto;
-      gap: 24px;
+      gap: 20px;
       align-items: center;
       background: var(--black);
       color: var(--white);
-      padding: 40px 48px;
+      padding: 14px 48px;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
     }
 
     .header-text h1 {
-      font-size: 28px;
+      font-size: 22px;
       font-weight: 800;
       letter-spacing: -.5px;
       line-height: 1.1;
     }
 
     .header-text .role {
-      font-size: 13px;
+      font-size: 11px;
       font-weight: 500;
       color: var(--red);
       text-transform: uppercase;
       letter-spacing: 1.5px;
-      margin-top: 6px;
+      margin-top: 3px;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
     }
 
     .header-text .tagline {
-      font-size: 13px;
+      font-size: 11px;
       color: #aaa;
-      margin-top: 10px;
-      max-width: 440px;
+      margin-top: 4px;
     }
 
     .contact-block {
       display: flex;
       flex-direction: column;
-      gap: 5px;
+      gap: 4px;
       text-align: right;
-      font-size: 12px;
+      font-size: 11px;
       color: #ccc;
     }
 
@@ -82,15 +82,22 @@
       text-decoration: none;
     }
 
-    .contact-block a:hover { color: var(--red); }
+    .header-right {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 16px;
+    }
 
     .photo-wrap {
-      width: 100px;
-      height: 100px;
+      width: 62px;
+      height: 62px;
       border-radius: 50%;
       overflow: hidden;
-      border: 3px solid var(--red);
+      border: 2px solid var(--red);
       flex-shrink: 0;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
     }
 
     .photo-wrap img {
@@ -99,102 +106,116 @@
       object-fit: cover;
     }
 
-    .header-right {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      gap: 16px;
-    }
-
-    /* ── Red bar ── */
     .red-bar {
-      height: 5px;
+      height: 4px;
       background: var(--red);
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
     }
 
-    /* ── Body layout ── */
+    /* Body layout */
     .body {
       display: grid;
-      grid-template-columns: 220px 1fr;
+      grid-template-columns: 200px 1fr;
     }
 
-    /* ── Sidebar ── */
+    /* Sidebar */
     aside {
       background: var(--dark);
       color: var(--white);
-      padding: 32px 24px;
+      padding: 24px 20px;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
     }
 
     aside h2 {
-      font-size: 10px;
+      font-size: 9px;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 2px;
       color: var(--red);
-      margin-bottom: 12px;
-      padding-bottom: 6px;
+      margin-bottom: 10px;
+      padding-bottom: 5px;
       border-bottom: 1px solid var(--mid);
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
     }
 
-    aside .section { margin-bottom: 28px; }
+    aside .section { margin-bottom: 22px; }
 
     .skill-tag {
       display: inline-block;
       background: var(--mid);
       color: #ddd;
-      font-size: 11px;
-      padding: 3px 8px;
+      font-size: 10px;
+      padding: 2px 6px;
       border-radius: 2px;
-      margin: 3px 2px 0 0;
+      margin: 2px 2px 0 0;
       line-height: 1.5;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
     }
 
     .skill-tag.highlight {
       background: var(--red);
       color: var(--white);
       font-weight: 600;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
     }
 
     .lang-row {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size: 12px;
-      padding: 5px 0;
+      font-size: 11px;
+      padding: 4px 0;
       border-bottom: 1px solid var(--mid);
       color: #ccc;
     }
 
     .lang-row:last-child { border-bottom: none; }
-    .lang-row .level { color: var(--red); font-weight: 600; font-size: 11px; }
+    .lang-row .level { color: var(--red); font-weight: 600; font-size: 10px; }
 
-    /* ── Main content ── */
-    main {
-      padding: 32px 40px;
-    }
+    /* Main */
+    main { padding: 24px 36px; }
 
-    .section { margin-bottom: 30px; }
+    .section { margin-bottom: 22px; }
 
     h2.section-title {
-      font-size: 10px;
+      font-size: 9px;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 2px;
       color: var(--red);
-      margin-bottom: 14px;
-      padding-bottom: 6px;
+      margin-bottom: 12px;
+      padding-bottom: 5px;
       border-bottom: 2px solid var(--light);
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
     }
 
-    /* Summary */
     .summary p {
-      font-size: 13.5px;
+      font-size: 12px;
       color: #333;
-      line-height: 1.65;
+      line-height: 1.6;
     }
 
-    /* Experience entries */
-    .entry { margin-bottom: 20px; }
+    .highlight-box {
+      background: #fff5f5;
+      border-left: 4px solid var(--red);
+      padding: 8px 12px;
+      margin-top: 12px;
+      font-size: 11px;
+      color: #333;
+      line-height: 1.55;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .highlight-box strong { color: var(--red); }
+
+    .entry { margin-bottom: 16px; page-break-inside: avoid; }
 
     .entry-header {
       display: flex;
@@ -206,229 +227,123 @@
 
     .entry-header .title {
       font-weight: 700;
-      font-size: 14px;
+      font-size: 13px;
       color: var(--black);
     }
 
     .entry-header .period {
-      font-size: 11px;
+      font-size: 10px;
       color: var(--muted);
       white-space: nowrap;
     }
 
     .entry .company {
-      font-size: 12px;
+      font-size: 11px;
       font-weight: 500;
       color: var(--red);
-      margin-bottom: 6px;
+      margin-bottom: 5px;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
     }
 
     .entry ul {
-      padding-left: 16px;
+      padding-left: 14px;
       color: #444;
-      font-size: 13px;
+      font-size: 11.5px;
     }
 
     .entry ul li {
-      margin-bottom: 3px;
-      line-height: 1.5;
+      margin-bottom: 2px;
+      line-height: 1.45;
     }
 
-    /* Projects grid */
     .projects-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 14px;
+      gap: 10px;
     }
 
     .project-card {
       border: 1px solid #e8e8e8;
       border-left: 3px solid var(--red);
-      padding: 12px 14px;
+      padding: 10px 12px;
       background: #fafafa;
+      page-break-inside: avoid;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
     }
 
     .project-card h3 {
-      font-size: 12.5px;
+      font-size: 11.5px;
       font-weight: 700;
       color: var(--black);
-      margin-bottom: 5px;
+      margin-bottom: 4px;
+    }
+
+    .project-card h3 a {
+      color: var(--red);
+      text-decoration: none;
     }
 
     .project-card p {
-      font-size: 12px;
+      font-size: 11px;
       color: #555;
-      line-height: 1.5;
+      line-height: 1.45;
     }
 
-    /* Education */
-    .edu-entry { margin-bottom: 14px; }
+    .edu-entry { margin-bottom: 11px; }
 
     .edu-entry .degree {
       font-weight: 700;
-      font-size: 13.5px;
+      font-size: 12.5px;
     }
 
     .edu-entry .institution {
-      font-size: 12px;
+      font-size: 11px;
       color: var(--red);
       font-weight: 500;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
     }
 
     .edu-entry .period-edu {
-      font-size: 11px;
-      color: var(--muted);
-    }
-
-    /* Highlight note box */
-    .highlight-box {
-      background: #fff5f5;
-      border-left: 4px solid var(--red);
-      padding: 10px 14px;
-      margin-top: 16px;
-      font-size: 12.5px;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    .highlight-box strong { color: var(--red); }
-
-    /* Insame full-width section */
-    .insame-section {
-      padding: 32px 48px 36px;
-      border-top: 2px solid var(--light);
-      background: #fafafa;
-    }
-
-    .insame-section h2 {
-      font-size: 10px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      color: var(--red);
-      margin-bottom: 18px;
-      padding-bottom: 6px;
-      border-bottom: 2px solid var(--light);
-    }
-
-    .insame-screenshots .gallery-grid {
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr;
-      gap: 5px;
-      margin-bottom: 9px;
-    }
-
-    .insame-screenshots .gallery-grid a {
-      display: block;
-      overflow: hidden;
-      border-radius: 2px;
-      border: 1px solid #e0e0e0;
-    }
-
-    .insame-screenshots .gallery-grid a.span-col { grid-column: 1 / -1; }
-
-    .insame-screenshots .gallery-grid img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      transition: opacity .15s;
-    }
-
-    .insame-screenshots .gallery-grid a:hover img { opacity: .85; }
-
-    .insame-folder-link {
-      display: inline-block;
-      margin-top: 9px;
-      font-size: 11px;
-      color: var(--red);
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .insame-folder-link:hover { text-decoration: underline; }
-
-    .insame-audio h3 {
-      font-size: 10px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      color: var(--muted);
-      margin-bottom: 10px;
-    }
-
-    .audio-list {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 8px 16px;
-    }
-
-    .audio-item { }
-
-    .audio-item .track-name {
-      font-size: 11px;
-      font-weight: 600;
-      color: var(--black);
-      margin-bottom: 3px;
-    }
-
-    .audio-item .track-instr {
       font-size: 10px;
       color: var(--muted);
-      margin-bottom: 3px;
     }
 
-    .audio-item audio {
-      width: 100%;
-      height: 26px;
+    .sidenote {
+      font-size: 10.5px;
+      color: #555;
+      line-height: 1.65;
+      border-left: 2px solid var(--light);
+      padding-left: 10px;
     }
 
-    /* Video row */
-    .insame-videos {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-      margin-top: 20px;
-      padding-top: 20px;
-      border-top: 1px solid #e8e8e8;
-    }
-
-    .insame-videos .video-wrap {
-      position: relative;
-      width: 100%;
-      padding-bottom: 56.25%;
-      background: var(--black);
-      border-radius: 2px;
-      overflow: hidden;
-    }
-
-    .insame-videos .video-wrap iframe {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-
-    /* Footer */
     footer {
       background: var(--black);
       color: #666;
       text-align: center;
-      padding: 14px;
-      font-size: 11px;
+      padding: 10px;
+      font-size: 10px;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page-2 {
+      break-before: page;
+      page-break-before: always;
     }
 
     @media print {
-      body { background: white; }
-      .page { margin: 0; box-shadow: none; }
+      @page { margin: 10mm; size: A4; }
+      body { background: white; font-size: 11px; }
+      .page { margin: 0; }
     }
   </style>
 </head>
 <body>
 <div class="page">
 
-  <!-- ══ HEADER ══ -->
   <header>
     <div class="header-text">
       <h1>Samuel Eder</h1>
@@ -444,19 +359,18 @@
       <div class="contact-block">
         <span>+43 680 1416729</span>
         <a href="mailto:samuel.eder@live.at">samuel.eder@live.at</a>
-        <a href="https://www.linkedin.com/in/samuel-eder/" target="_blank">linkedin.com/in/samuel-eder</a>
-        <a href="https://github.com/Walsamer" target="_blank">github.com/Walsamer</a>
-        <a href="https://huggingface.co/clarsam" target="_blank">huggingface.co/clarsam</a>
+        <a href="https://www.linkedin.com/in/samuel-eder/">linkedin.com/in/samuel-eder</a>
+        <a href="https://github.com/Walsamer">github.com/Walsamer</a>
+        <a href="https://huggingface.co/clarsam">huggingface.co/clarsam</a>
+        <a href="https://walsamer.github.io/samuel_eder_cv/index.html">walsamer.github.io/samuel_eder_cv</a>
         <span>Vienna, Austria</span>
       </div>
     </div>
   </header>
   <div class="red-bar"></div>
 
-  <!-- ══ BODY ══ -->
   <div class="body">
 
-    <!-- ── SIDEBAR ── -->
     <aside>
 
       <div class="section">
@@ -511,10 +425,8 @@
 
     </aside>
 
-    <!-- ── MAIN ── -->
     <main>
 
-      <!-- Summary -->
       <div class="section summary">
         <h2 class="section-title">Profile</h2>
         <p>
@@ -535,7 +447,6 @@
         </div>
       </div>
 
-      <!-- Experience -->
       <div class="section">
         <h2 class="section-title">Professional Experience</h2>
 
@@ -593,13 +504,19 @@
           <ul>
             <li>Over 8 years of individual and group instruction across Austria and Germany</li>
             <li>Developed tailored lesson plans for all skill levels and ages; prepared students for recitals, examinations, and ensemble performance</li>
-            <li>Deep practical understanding of musical technique, methodical teaching and learning of wind instruments, notation, composition, music theory and performance feedback — directly applicable to evaluating audio recognition quality</li>
+            <li>Deep practical understanding of musical technique, methodical teaching and learning of wind instruments, notation, composition, music theory and performance feedback</li>
           </ul>
         </div>
 
       </div>
 
-      <!-- Projects -->
+    </main>
+  </div>
+
+  <div class="body page-2">
+    <aside></aside>
+    <main>
+
       <div class="section">
         <h2 class="section-title">Selected Projects</h2>
         <div class="projects-grid">
@@ -610,13 +527,7 @@
           </div>
 
           <div class="project-card">
-            <h3>
-              LLM as a Judge –
-              <a href="research_and_papers/Self-Preference_Bias_in_LLM_Juries-A_Controlled_Test_of_Hard_Holdout.pdf"
-                 target="_blank"
-                 style="color:var(--red);text-decoration:none;font-weight:700;"
-                 title="Open paper PDF">Research Paper ↗</a>
-            </h3>
+            <h3>LLM as a Judge – <a href="research_and_papers/Self-Preference_Bias_in_LLM_Juries-A_Controlled_Test_of_Hard_Holdout.pdf">Research Paper ↗</a></h3>
             <p><em>Self-Preference Bias in LLM Juries: A Controlled Test of Hard Holdout</em> — JKU Linz, 2026.
             Curated 4,196 judge votes across a 7-model jury; tested hard holdout as a bias mitigation.
             Finding: vote-level self-preference exists in 6/7 models yet produces no detectable jury-level effect.</p>
@@ -629,76 +540,38 @@
 
           <div class="project-card">
             <h3>ZahnML – Clinical NLP Pipeline</h3>
-            <p>End-to-end pipeline for transcription, classification, and structured information extraction from dental inputs. Automated generation of Heil- und Kostenpläne and material billing (Materialabrechnungen) directly from transcription — demonstrating QA design across a multi-step ML workflow.</p>
+            <p>End-to-end pipeline for transcription, classification, and structured information extraction from dental inputs. Automated generation of Heil- und Kostenpläne and Materialabrechnungen directly from transcription.</p>
           </div>
 
         </div>
       </div>
 
-      <!-- Orchestra & Chamber Music -->
       <div class="section">
         <h2 class="section-title">Orchestra &amp; Chamber Music</h2>
-
-        <div class="entry">
-          <div class="entry-header">
-            <span class="title">Clarinet, E-flat Clarinet &amp; Bass Clarinet — Regular Substitute</span>
-            <span class="period">2019 – 2022</span>
-          </div>
-          <div class="company">Symphonieorchester Vorarlberg (SOV)</div>
-        </div>
-
-        <div class="entry">
-          <div class="entry-header">
-            <span class="title">Clarinet &amp; E-flat Clarinet — Substitute · incl. Bregenzer Festspiele</span>
-            <span class="period">2019 / 2021 / 2022</span>
-          </div>
-          <div class="company">Wiener Symphoniker</div>
-        </div>
-
-        <div class="entry">
-          <div class="entry-header">
-            <span class="title">Substitute Principal Clarinet</span>
-            <span class="period">2019</span>
-          </div>
-          <div class="company">Citylight Symphonieorchester Luzern</div>
-        </div>
-
-        <div class="entry" style="margin-bottom:8px;">
-          <div class="entry-header">
-            <span class="title">Chamber Music</span>
-          </div>
-          <div class="company" style="margin-bottom:4px;">Selected ensembles</div>
-          <ul>
-            <li>Chroma Quintet — World premiere of <em>Inferno</em> by Pierre Thilloy, a work dedicated to the ensemble; Jastrzębie-Zdrój (2025), Lublin (2024), Caylus Festival, France (2026) — <a href="https://youtu.be/bb964r8xj1E" target="_blank" style="color:var(--red);text-decoration:none;font-weight:600;">Watch ↗</a></li>
-            <li>Ensemble+ — contemporary music, Festival Texte und Töne (2021)</li>
-            <li>Ensemble Ars Braemia — contemporary music, Zurich; SRG SSR recording &amp; premiere (2019)</li>
-            <li>PulsArt Ensemble für Neue Musik — ORF Live Broadcast (2018–2019)</li>
-            <li>Klezmertrio «dri kindsköpf» (since 2017)</li>
-            <li>Trio Astarte — Clarinet, Violin, Piano (2015–2020)</li>
-          </ul>
-        </div>
-
-        <div class="entry">
-          <div class="entry-header">
-            <span class="title">Jazz Album Recording — <em>Chroma</em></span>
-          </div>
-          <div class="company">Full Crimp Ensemble</div>
-        </div>
-
+        <p class="sidenote">
+          Regular substitute Clarinet / E-flat / Bass Clarinet at <strong>Symphonieorchester Vorarlberg</strong> (2019–2022)
+          and <strong>Wiener Symphoniker</strong> incl. Bregenzer Festspiele (2019–2022);
+          substitute principal clarinet, Citylight Symphonieorchester Luzern (2019).
+          Chamber music: <strong>Chroma Quintet</strong> — world premiere of Pierre Thilloy's <em>Inferno</em>
+          (dedicated to the ensemble), Jastrzębie-Zdrój 2025, Lublin 2024, Caylus Festival France 2026
+          — <a href="https://youtu.be/bb964r8xj1E" style="color:var(--red);text-decoration:none;">youtu.be/bb964r8xj1E</a>;
+          Ensemble Ars Braemia (SRG SSR recording 2019), PulsArt Ensemble (ORF Broadcast 2018–2019),
+          Klezmertrio «dri kindsköpf», Trio Astarte.
+          Jazz album <em>Chroma</em> with Full Crimp Ensemble.
+        </p>
       </div>
 
-      <!-- Education -->
       <div class="section">
         <h2 class="section-title">Education</h2>
 
         <div class="edu-entry">
-          <div class="degree">Bachelor of Science — Artificial Intelligence <span style="color:var(--muted);font-weight:400;font-size:11px;">(in progress, 4th semester)</span></div>
+          <div class="degree">Bachelor of Science — Artificial Intelligence <span style="color:var(--muted);font-weight:400;font-size:10px;">(in progress, 4th semester)</span></div>
           <div class="institution">Johannes Kepler Universität Linz</div>
           <div class="period-edu">2024 – present</div>
         </div>
 
         <div class="edu-entry">
-          <div class="degree">Master of Arts — Clarinet <span style="color:var(--muted);font-weight:400;font-size:11px;">(thesis pending, expected Aug 2026)</span></div>
+          <div class="degree">Master of Arts — Clarinet <span style="color:var(--muted);font-weight:400;font-size:10px;">(thesis pending, expected Aug 2026)</span></div>
           <div class="institution">Musik und Kunst Universität der Stadt Wien (MUK)</div>
           <div class="period-edu">2020 – 2026</div>
         </div>
@@ -718,45 +591,13 @@
       </div>
 
     </main>
-  </div><!-- /.body -->
-
-  <!-- ══ INSAME PROJECT MATERIALS ══ -->
-  <div class="insame-section">
-    <h2>INSAME — Project Materials</h2>
-
-    <div class="insame-screenshots" style="margin-bottom:14px;">
-      <div class="gallery-grid">
-        <a href="insame_files/insame_mobilegame_blasinstrumente_banner.png" target="_blank" class="span-col" style="height:100px;">
-          <img src="insame_files/insame_mobilegame_blasinstrumente_banner.png" alt="INSAME app banner" style="object-position:center top;" />
-        </a>
-        <a href="insame_files/holding_the_note_screen.png" target="_blank" style="height:90px;">
-          <img src="insame_files/holding_the_note_screen.png" alt="Pitch detection screen" />
-        </a>
-        <a href="insame_files/songmode_game.jpg" target="_blank" style="height:90px;">
-          <img src="insame_files/songmode_game.jpg" alt="Song mode with real-time feedback" />
-        </a>
-        <a href="insame_files/VN_10-23.jpeg" target="_blank" style="height:90px;">
-          <img src="insame_files/VN_10-23.jpeg" alt="Vorarlberg Nachrichten press article" style="object-position:top;" />
-        </a>
-      </div>
-      <a class="insame-folder-link" href="insame_files/" target="_blank">↗ View all project materials</a>
-    </div>
-
-    <div class="insame-videos">
-      <div class="video-wrap">
-        <iframe src="https://www.youtube.com/embed/wUF-tRemu0k" allowfullscreen loading="lazy" title="INSAME video 1"></iframe>
-      </div>
-      <div class="video-wrap">
-        <iframe src="https://www.youtube.com/embed/JTiE7HaEChE" allowfullscreen loading="lazy" title="INSAME video 2"></iframe>
-      </div>
-    </div>
-
   </div>
 
   <footer>
-    Samuel Eder · samuel.eder@live.at · +43 680 1416729 · Vienna, Austria
+    Samuel Eder · samuel.eder@live.at · +43 680 1416729 · Vienna, Austria ·
+    <a href="https://walsamer.github.io/samuel_eder_cv/index.html" style="color:#666;text-decoration:none;">walsamer.github.io/samuel_eder_cv</a>
   </footer>
 
-</div><!-- /.page -->
+</div>
 </body>
 </html>
